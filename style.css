@@ -1,0 +1,334 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: rgb(22, 22, 22); 
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    height:60px;
+    width:100%;
+    display: flex;
+    background-color: rgb(48, 46, 46); 
+    z-index: 9999;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);   
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+ .nav__items__div {
+    display: flex;
+    width:60%;
+    font-size:10px;
+} 
+
+.nav__brand {    
+    width:100px;  
+}
+
+.brand__logo {
+    width:100%;    
+    height:60px;
+    margin:10px;
+}
+
+.navbar__nav__items {
+    color:rgb(173, 167, 167);
+    height:35px;
+    width:120px;   
+    padding-top: 25px;
+}
+
+a:link {
+    color:rgb(173, 167, 167);
+}
+
+a:active {
+    color:rgb(173, 167, 167);
+
+
+}
+a:visited {
+    color:rgb(173, 167, 167);
+
+}
+
+a:hover {
+    color:rgb(173, 167, 167);
+
+}
+
+
+
+.navbar__nav__items:hover {
+    color:black;
+    /* background-color: white; */
+    background-color:rgb(179, 135, 17);
+}
+
+
+.btn__primary {
+    margin-right: 1rem;
+    height:40px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to right,
+        white 0%,
+        gold 45%,
+        rgb(109, 93, 4) 100%
+    );
+
+}
+
+/* .container {
+
+} */
+
+.hero__container {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero__image__container {
+    margin:auto;
+}
+
+.hero__image {
+
+    height:40%;
+    width:100%;
+    right: auto;
+    left: auto;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    
+}
+
+/* .hero__text {
+} */
+
+.hero__text__heading {
+    color:rgb(179, 135, 17);
+    font-size:30px;
+}
+
+.hero__text__description {
+    color:rgb(228, 218, 218);
+}
+
+.middle__content {
+    margin:10%;
+    
+}
+
+#order__now {
+    height: 60px;
+    width: 150px;
+    margin: auto;
+
+
+}
+
+.bakery__menu__card {
+    display:flex;
+    flex-direction: column;
+    color: whitesmoke;
+
+}
+
+.bakery__menu__card__image {
+
+    height:300px; 
+    width:300px;
+    border-radius: 50%;
+    margin-right:10%;
+
+}
+
+.bakery__menu__card__details {
+    height:50px;
+    border: solid 2px rgb(179, 135, 17);
+    text-align: center;
+    justify-content: center;
+    padding-top:30px;
+
+}
+
+
+footer {
+    background-color: rgb(46, 42, 42); 
+  
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding:3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+     width:370px;  /*new */
+     font-size:10px;
+}
+
+.footer__outlets {
+
+    align-items: center;
+    
+
+}
+
+/* .footer__contacts{
+    
+} */
+
+.footer__icons {
+    height:50px;
+    width:100px;
+}
+
+@media(min-width:1200px) {
+
+    .navbar {
+        height:70px;        
+    }
+
+    .nav__brand {    
+        width:220px;
+        
+    }
+
+    
+    .brand__logo {
+        width:100%;    
+        height:60px;
+        margin-left:10%; 
+    }
+
+    .navbar__nav__items {
+        
+        height:60px;
+        width:120px; 
+        padding-top: 10px;
+        
+    }
+
+    .hero__container {
+        margin-top: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem; 
+        display: flex;
+        flex-direction:column;
+    
+    }
+    
+    .hero__image__container {
+        margin:auto;
+         
+    }
+    
+    .hero__image {
+    
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        
+    }
+
+    .nav__items__div {
+        display: flex;
+        width:25%;
+        font-size:15px;
+        margin-left: 0%;
+
+    } 
+
+    .hero__text__heading {
+        
+        font-size:40px;
+    }
+    
+    .hero__text__description {
+        
+        font-size: 20px;
+        width: 50%;
+    }
+
+
+    #order__now {
+        height: 80px;
+        width: 300px;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 20px;
+        
+    }
+
+    /* .bakery__menu__card {
+      
+        
+    
+    } */
+
+    .bakery__menu__items {
+
+       
+        margin-left: 25%;
+    }
+
+    .bakery__menu__card__image {
+
+        height:400px;
+        width:400px;
+        margin-left:11%;
+    
+    }
+
+
+    .bakery__menu__card__details {
+       
+        width:50%;
+        margin-left: 10%;
+        
+    
+    }
+
+    footer {
+        width:99.55%;
+        font-size:20px;
+    }
+
+
+    .footer__icons {
+        height:100px;
+        width:200px;
+    }
+
+    
+    
+
+}
+
+ /* @media(min-width:1200px) {
+
+    .bakery__menu__card__details {
+        height:50px;
+        width:50%;
+        margin-left: 30px; 
+    } 
+
+
+    .bakery__menu__card__image {
+        margin-left: 25px;
+    
+    }
+
+    .bakery__menu__items {
+
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 28%;
+    }
+}  */
